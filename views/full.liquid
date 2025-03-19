@@ -1,1 +1,10 @@
-<p>hello world</p>
+<script>
+  fetch("http://127.0.0.1:8080/markup", { method: "POST" }).then(res => res.json())
+  .then(data => {
+    const element = document.querySelector("div");
+    element.innerHTML = data.markup;
+  });
+</script>
+
+<div>
+</div>

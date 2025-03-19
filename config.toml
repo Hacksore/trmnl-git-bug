@@ -1,2 +1,2 @@
 strategy = "polling"
-url = "http://server:8080/test.json"
+url = "http://host.docker.internal:8080/"
